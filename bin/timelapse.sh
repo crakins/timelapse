@@ -44,6 +44,8 @@ echo "Frame per second is "$framespersecond". "
 echo "This will take approximately "$timeToTakeMinutes" minutes..."
 echo ""
 
+# Create video directory, command ignored if it already exists
+mkdir -p videos
 # Change to fswebcam directory
 cd /home/pi/timelapse/videos
 
