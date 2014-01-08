@@ -1,0 +1,6 @@
+####### CODE 12/11/2013
+mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell:autoaspect:vqscale=3 -vf scale=640:480 -mf type=jpeg:fps=$framespersecond mf://@frames.txt -o $NAME.avi
+
+
+####### NEW SNIPPET FROM WEB 12/11/2013 ##########################
+mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 -vf scale=640:480 -o $NAME.avi -mf type=jpeg:fps=$framespersecond mf://@frames.txt
